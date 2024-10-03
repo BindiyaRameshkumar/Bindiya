@@ -1,0 +1,221 @@
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and general page styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Navigation styling */
+nav {
+    background: #333;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #f4b400;
+}
+
+/* Header section */
+header {
+    background: #282c34;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+    position: relative;
+}
+
+header .container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+header .social-links {
+    margin-top: 15px;
+}
+
+header .social-links .icon {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+header .social-links .icon:hover {
+    color: #f4b400;
+}
+
+/* Profile picture styling */
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border: 4px solid #f4b400;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Section styling */
+.section {
+    padding: 3rem 0;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 28px;
+    color: #282c34;
+}
+
+.section .container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Skills section */
+#skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#skills ul li {
+    background: #f4b400;
+    color: #fff;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: transform 0.2s ease;
+}
+
+#skills ul li:hover {
+    transform: scale(1.05);
+}
+
+/* Projects styling */
+.project-item {
+    background: #f4f4f9;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.project-item h3 {
+    font-size: 24px;
+    color: #282c34;
+}
+
+.project-item p {
+    margin-top: 10px;
+}
+
+/* Contact section */
+#contact a {
+    color: #f4b400;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer .button {
+    display: inline-block;
+    background: #f4b400;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer .button:hover {
+    background: #e69500;
+}
+
+/* Animation Classes */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideUp {
+    0% { transform: translateY(20px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes slideLeft {
+    0% { transform: translateX(-20px); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+/* Applying animations */
+.animate-fade-in {
+    animation: fadeIn 1.5s ease;
+}
+
+.animate-slide-up {
+    animation: slideUp 1.5s ease;
+}
+
+.animate-slide-left {
+    animation: slideLeft 1.5s ease;
+}
+
+.animate-bounce {
+    animation: bounce 1s infinite;
+}
